@@ -1,29 +1,33 @@
+import jsonData from './../data.json';
+import { useState } from 'react';
+
 function ProductRow () {
+    const [products, setProducts] = useState(jsonData);
     return (
         <div>
             <tr>
-            <td>Football</td>
-            <td>$49.99</td>
+            <td>{products[0].name}</td>
+            <td>{products[0].price}</td>
             </tr>
             <tr>
-            <td>Basketball</td>
-            <td>$9.99</td>
+            <td>{products[1].name}</td>
+            <td>{products[1].price}</td>
         </tr>
         <tr>
-            <td>iPod Touch</td>
-            <td>$99.99</td>
+            <td>{products[2].name}</td>
+            <td>{products[2].price}</td>
         </tr>
         <tr>
-            <td>iPhone X</td>
-            <td>$199.99</td>
+            <td>{products[3].name}</td>
+            <td>{products[3].price}</td>
         </tr>
         <tr>
-            <td>Tennis Balls</td>
-            <td>$199.99</td>
+            <td>{products[4].name}</td>
+            <td>{products[4].price}</td>
         </tr>
         <tr>
-            <td>Huawei P10</td>
-            <td>$199.99</td>
+            <td>{products[5].name}</td>
+            <td>{products[5].price}</td>
         </tr>
         
         </div>

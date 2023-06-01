@@ -1,7 +1,7 @@
-import React from "react";
+
 import ProductRow from "./ProductRow";
 
-function ProductTable ({products, searchBox, searchCheckedBox}) {
+function ProductTable () {
     return (
         <div>
         <table>
