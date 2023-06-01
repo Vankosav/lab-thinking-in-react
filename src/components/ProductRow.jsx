@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 function ProductRow () {
     const [products, setProducts] = useState(jsonData);
+    
     return (
         <div>
             <tr>
